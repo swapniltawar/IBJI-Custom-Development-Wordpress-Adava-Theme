@@ -1,0 +1,204 @@
+/* This is the stylesheet for single-locations.php */
+h2.entry-title {
+    display: none;
+}
+.fusion-meta-info {
+    display:none;
+}
+
+h1.title-heading-left {
+    font-size: 42px;
+}
+.OrthoAccess {
+    margin:2% 0;
+    background: #f6f6f6;
+    padding:1% 2% 2%;
+}
+.BorderLeft {
+    border-left: 4px solid #00853f;
+    margin-bottom:30px;
+}
+.BorderLeft h4 {
+    font-size:26px;
+}
+#map {
+    width:100%;
+    height:200px;
+    border:1px solid #ccc;
+}
+.Doctor, .Member {
+    border:1px solid #f1f2f2;
+    margin-bottom: 30px;
+}
+.Doctor .details, .Member .details {
+    padding:0 20px; 
+}
+.Doctor .details .SpecialtiesText ul {
+    margin-top:0;
+}
+/* Hide Doctor Specialities Text Field For now */
+.Doctor .details .SpecialtiesText {
+    display:none;
+}
+/* Hide Doctor Specialties Taxonomy List */
+/*.Doctor .details .specialties {
+    display:none;
+}*/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #f2f2f2;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.tab-pane h3, 
+.OrthoAccess h3, 
+.Address strong,
+.BorderLeft strong {
+    color: #555555;
+}
+
+#map {
+    width:100%;
+    height:200px;
+    border:1px solid #ccc;
+}
+#map #content {
+    width:100%;
+}
+#map p.Address {
+    margin-bottom:0;
+    margin-top:0;
+}
+#map p.phone {
+    margin-bottom:10px;
+}
+ul.ServiceList {
+    margin-top:0;
+    margin-bottom:0;
+    width:100%;
+}
+
+/* Media Queries */
+/* ---------------------------------------------------------------------------------*/
+@media screen and (min-width: 480px) {
+    .Doctor, .Member {
+        float:left;
+        width: 48%;
+        margin-right:2%;
+        margin-bottom:30px;
+    }
+}
+@media screen and (min-width: 650px) {
+    .ServiceColumn {
+        float: left;
+        width: 48%;
+        margin-right: 2%;
+    }    
+}
+@media screen and (min-width: 800px) {
+    #map {
+        width:100%;
+        height:300px;
+    }
+    .Doctor, .Member {
+        width:31%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .LeftColumn {
+        float:left;
+        width:58%;
+        margin-right:2%;
+    }
+    .OrthoAccess {
+        float:right;
+        width:38%;
+        margin-right:2%;
+    }
+    .AddressDirectionsWrap {
+        float:left;
+        width:48%;
+        margin-right:2%;
+    }
+    #map {
+        width:50%;
+        height:400px;
+        float:right;
+    }
+    .Doctor, .Member {
+        float:left;
+        width: 23%;
+        margin-right:2%;
+    }
+    .ServiceColumn {
+        width:auto;
+        float:none;
+        margin-right:0;
+        margin-top:20px;
+    }
+    ul.ServiceList {
+        float:left;
+        width: 23%;
+        margin-right:2%;
+        margin-bottom:30px;
+    }
+
+}
+
+@media print {
+    .fusion-header .fusion-logo {
+        margin-top:0 !important;
+    }
+    #main {
+        padding-top:0 !important;
+        margin-top:0;
+    }
+    .fusion-main-menu, .fusion-mobile-navigation, .fusion-secondary-main-menu, .fusion-page-title-bar {
+        display:none;
+    }
+    .fusion-post-title-meta-wrap {
+        display:none;
+    }
+    .fusion-secondary-menu {
+        display:none;
+    }
+    h1.title-heading-left {
+        font-size:30px;
+    }
+    h4 {
+        font-size:20px;
+    }
+    .BorderLeft {
+      border-left:0;  
+    } 
+    /* Make an appointment */
+    .fusion-builder-row-inner {
+        width:100%;
+    }
+    .fusion-builder-row-inner .fusion-layout-column {
+        float:none !important;
+        margin-right:0;
+        width: 100% !important;
+    }
+    /* Display Hours, Directions, Services, Doctors & Staff Tabs */
+    #tab-7acc2226014a44935a0, #tab-5c4b69a75e565a33666, #tab-84a1abbeef8b054753a, #tab-8528a4894afb1f96b5b, #tab-8528a4894afb1f96b5b2 {
+        display: block;
+        opacity: 1;
+    }
+    .OrthoAccess {
+        display:none;
+    }
+    .Doctor, .Member {
+        float: left;
+        width: 48%;
+        margin-right: 2%;
+        height:auto;
+    }
+    .Doctor .image, .Member .image {
+        display:none;
+    }
+}

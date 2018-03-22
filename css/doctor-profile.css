@@ -1,0 +1,207 @@
+/* This is the stylesheet for single-doctors.php */
+h2.entry-title {
+    display: none;
+}
+.fusion-meta-info {
+    display:none;
+}
+h4 {
+    color: #555555;
+}
+h1.title-heading-left {
+    font-size: 42px;
+}
+.BorderLeft {
+    border-left: 4px solid #00853f;
+}
+.phone {
+    margin-bottom:0;
+    margin-after:0;
+    -webkit-margin-after: 0;
+}
+.fax {
+    margin-top:0;
+    margin-before:0;
+    -webkit-margin-before:0;
+}
+h4 {
+    font-size:26px;
+}
+h5.SpecialtiesHeader, h5.CertificationsHeader, h5.LanguagesHeader {
+    color: #555555;
+    font-size:18px;
+    margin:0;
+}
+.Specialties ul, ul.Specialties, .Certifications ul, ul.Certifications, ul.Languages, ul.Titles {
+    margin-top:0;
+}
+
+/* Hide Specialties Taxonomy Field & Certifications Taxonomy Fields */
+.SpecialtiesTaxonomy, .CertificationsTaxonomy {
+    display:none;
+}
+
+.Education {
+    margin-bottom:0.8em;
+    min-height: 100px;
+}
+.Education h5 {
+    font-size:18px;
+    font-weight: bold;
+    margin:0;
+}
+.Education p {
+    margin:0;
+}
+.Video {
+    max-width:100%;
+    height:auto;
+}
+.Audio, .OtherFiles {
+    padding:10px;
+    margin-bottom:0.8em;
+    border:1px solid #ccc;
+}
+.Audio h5, .OtherFiles h5 {
+    font-size:18px;
+    font-weight: bold;
+    margin:0.3em 0 0.8em 0;
+}
+.AudioCaption, .AudioDescription, .OtherFileCaption, .OtherFileDescription {
+    margin:0;
+}
+
+#map {
+    width:100%;
+    height:200px;
+    border:1px solid #ccc;
+}
+#map #content {
+    width:100%;
+}
+#map p.Address {
+    margin-bottom:0;
+    margin-top:0;
+}
+#map p.phone {
+    margin-bottom:10px;
+}
+.Video {
+    position:relative;
+    margin:0 0 30px 0;
+}
+.VideoContainer {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.VideoContainer iframe, .VideoContainer object, .VideoContainer embed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Media Queries */
+/* ---------------------------------------------------------------------------------*/
+@media screen and (min-width: 800px) {
+    #map {
+        width:100%;
+        height:300px;
+    }
+    .Education {
+        float:left;
+        width:47%;
+        margin-right:3%; 
+    }
+    .Video {
+        width:80%;
+    }
+    .Audio, .OtherFiles {
+        float:left;
+        width:47%;
+        margin-right:3%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #map {
+        width:50%;
+        height:400px;
+        float:right;
+    }
+    .Education {
+        float:left;
+        width:30%;
+        margin-right:3%; 
+    }
+    .Video {
+        position:relative;
+        float:left;
+        width:48%;
+        margin-right:2%;
+    }
+    .Audio, .OtherFiles {
+        float:left;
+        width:30%;
+        margin-right:3%;
+    }   
+}
+@media print {
+    .fusion-header .fusion-logo {
+        margin-top:0 !important;
+    }
+    #main {
+        padding-top:0 !important;
+        margin-top:0;
+    }
+    .fusion-secondary-main-menu, .fusion-page-title-bar {
+        display:none;
+    }
+    .fusion-post-title-meta-wrap {
+        display:none;
+    }
+    .fusion-secondary-menu {
+        display:none;
+    }
+    h1.title-heading-left {
+        font-size:30px;
+    }
+    h4 {
+        font-size:20px;
+    }
+    .BorderLeft {
+      border-left:0;  
+    } 
+    /* Make an appointment */
+    .fusion-builder-row-inner {
+        width:100%;
+    }
+    .fusion-builder-row-inner .fusion-layout-column {
+        float:none !important;
+        margin-right:0;
+        width: 100% !important;
+    }
+    /* Display Contact Tab & Content */
+    #tab-2fdbee5d75cf64788ea {
+        display: block;
+        opacity: 1;
+    }
+    /* Display Profile Tab & Content */
+    #tab-820e17172deaceab05d {
+        display: block !important;
+        opacity: 1;
+    }
+    
+    /* Hide Health Plan Tab & content */
+    #fusion-tab-health-plans, #mobile-fusion-tab-health-plans, #tab-467e1f7fb2120b96eec {
+        display:none;
+    }
+    /* Hide Media Tab & content */
+    #fusion-tab-media, #mobile-fusion-tab-media, #tab-f84bfb1f8ec69413945 {
+        display:none;
+    }
+}
